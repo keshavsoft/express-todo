@@ -1,6 +1,6 @@
 {
-  "name": "express-todo",
-  "version": "1.4.2",
+  "name": "@keshavsoft-org/express-todo",
+  "version": "1.4.3",
   "description": "CLI to scaffold projects using templates",
   "keywords": [
     "cli",

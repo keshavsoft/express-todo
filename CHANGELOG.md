@@ -24,3 +24,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - new repos added
+
+## [1.4.3] - 2026-05-21
+
+### Added
+- moved to npm org
