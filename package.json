@@ -1,6 +1,6 @@
 {
   "name": "@keshavsoft-org/express-todo",
-  "version": "1.4.4",
+  "version": "1.5.1",
   "description": "CLI to scaffold projects using templates",
   "keywords": [
     "cli",
@@ -16,7 +16,7 @@
     ".": "./index.js"
   },
   "bin": {
-    "express-todo": "./bin/cli.js"
+    "@keshavsoft-org/express-todo": "./bin/cli.js"
   },
   "files": [
     "bin/",

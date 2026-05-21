@@ -29,3 +29,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - moved to npm org
+
+## [1.5.1] - 2026-05-21
+
+### Added
+- all dynamic
