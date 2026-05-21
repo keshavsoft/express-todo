@@ -1,98 +1,60 @@
-# express-todo
+# 🚀 @keshavsoft-org/express-todo
 
-Simple Express boilerplate generator for quickly starting Express applications.
+Simple and clean Express.js project generator.
+
+Create a ready-to-run Express application in seconds using a single command.
 
 ---
 
-# Installation
+# ✨ Features
+
+- Fast Express boilerplate generation
+- Clean folder structure
+- Beginner friendly
+- Minimal setup
+- Ready-to-run server configuration
+- Environment file support
+- VSCode-ready project structure
+
+---
+
+# 📦 Installation
 
 ## Using NPX (Recommended)
 
 ```bash
-npx express-todo simple
+npx @keshavsoft-org/express-todo simple
 ```
 
 ---
 
-# What It Does
+# ⚡ Quick Start
 
-The command:
+## 1. Create Project
 
 ```bash
-npx express-todo simple
-```
-
-automatically creates a ready-to-use Express project with basic structure and starter configuration.
-
----
-
-# Generated Structure
-
-```txt
-project-name/
-│
-├── .vscode/
-├── Config/
-├── Public/
-├── .env
-├── .env.local
-├── app.js
-├── config.json
-├── configLoader.js
-├── package.json
-├── package-lock.json
-├── port.js
-├── routes.js
-└── server.js
+npx @keshavsoft-org/express-todo simple
 ```
 
 ---
 
-# Example
-
-## Command
-
-```bash
-npx express-todo simple
-```
-
-## Output
-
-```txt
-[keshavsoft] Project created: your-project-name
-```
-
----
-
-# Quick Start
-
-## Step 1
-
-Create project:
-
-```bash
-npx express-todo simple
-```
-
-## Step 2
-
-Move into project folder:
+## 2. Move Into Project
 
 ```bash
 cd your-project-name
 ```
 
-## Step 3
+---
 
-Install dependencies:
+## 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-## Step 4
+---
 
-Start server:
+## 4. Start Server
 
 ```bash
 npm start
@@ -100,24 +62,78 @@ npm start
 
 ---
 
-# Why express-todo?
+# 📁 Generated Structure
 
-- Fast Express setup
-- Clean starter structure
-- Beginner friendly
-- Reduces repetitive boilerplate work
-- Simple command line usage
-
----
-
-# Command Reference
-
-```bash
-npx express-todo simple
+```txt
+your-project/
+│
+├── .vscode/
+├── Config/
+├── Public/
+│
+├── .env
+├── .env.local
+│
+├── app.js
+├── config.json
+├── configLoader.js
+├── port.js
+├── routes.js
+├── server.js
+│
+└── package.json
 ```
 
 ---
 
-# License
+# 🛠 Command Reference
+
+## Create Simple Express App
+
+```bash
+npx @keshavsoft-org/express-todo simple
+```
+
+Creates a new Express starter project with basic configuration.
+
+---
+
+# 📸 Example
+
+## Command
+
+```bash
+npx @keshavsoft-org/express-todo simple
+```
+
+## Output
+
+```txt
+[keshavsoft] Project created: my-express-app
+```
+
+---
+
+# 🎯 Why Use This?
+
+Setting up Express projects repeatedly can be boring.
+
+This CLI helps you:
+
+- Skip repetitive setup
+- Start faster
+- Maintain clean structure
+- Focus on development instead of boilerplate
+
+---
+
+# 🔧 Requirements
+
+- Node.js >= 18
+- npm >= 9
+
+---
+
+# 📄 License
 
 MIT
