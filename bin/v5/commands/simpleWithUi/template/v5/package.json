@@ -19,6 +19,6 @@
     "@keshavsoft/kschema-api-gen": "^1.11.1",
     "tailwind-todo": "^1.4.2",
     "json-crud-cli": "^1.1.2",
-    "json-crud-ui-components": "^1.5.1"
+    "json-crud-ui-components": "^1.5.3"
   }
 }
