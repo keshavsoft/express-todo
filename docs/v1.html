@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>express-todo Docs</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+      color: #e2e8f0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .Container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .Navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #334155;
+      padding: 20px 0;
+      z-index: 100;
+    }
+
+    .NavbarFlex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .NavbarLinks {
+      display: flex;
+      gap: 20px;
+    }
+
+    .NavbarLinks a {
+      color: #cbd5e1;
+    }
+
+    .Hero {
+      padding: 100px 0;
+    }
+
+    .HeroCard {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid #334155;
+      border-radius: 24px;
+      padding: 60px;
+    }
+
+    h1 {
+      font-size: 80px;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .SubTitle {
+      font-size: 28px;
+      color: #cbd5e1;
+      margin-bottom: 40px;
+    }
+
+    .Buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .Btn {
+      background: #38bdf8;
+      color: black;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .BtnSecondary {
+      background: #1e293b;
+      color: white;
+      border: 1px solid #475569;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    .SectionCard {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid #334155;
+      border-radius: 24px;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 30px;
+      font-size: 40px;
+    }
+
+    .Terminal {
+      background: black;
+      border-radius: 16px;
+      padding: 30px;
+      overflow-x: auto;
+    }
+
+    pre {
+      color: #22c55e;
+      font-size: 18px;
+    }
+
+    .Grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .Card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid #334155;
+      border-radius: 20px;
+      padding: 30px;
+      transition: 0.2s;
+    }
+
+    .Card:hover {
+      transform: translateY(-5px);
+    }
+
+    .Card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="Navbar">
+    <div class="Container NavbarFlex">
+      <h3>express-todo</h3>
+
+      <div class="NavbarLinks">
+        <a href="#installation">Installation</a>
+        <a href="#features">Features</a>
+        <a href="#usage">Usage</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="Container">
+
+    <section class="Hero">
+
+      <div class="HeroCard">
+
+        <h1>express-todo</h1>
+
+        <p class="SubTitle">
+          Simple Express boilerplate generator for quickly starting backend projects.
+        </p>
+
+        <div class="Buttons">
+
+          <a class="Btn" href="https://www.npmjs.com/package/@keshavsoft-org/express-todo">
+            NPM Package
+          </a>
+
+          <a class="Btn BtnSecondary" href="https://github.com/keshavsoft/express-todo">
+            GitHub Repository
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="installation">
+
+      <div class="SectionCard">
+
+        <h2>Installation</h2>
+
+        <div class="Terminal">
+          <pre>
+npx @keshavsoft-org/express-todo simple
+</pre>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="usage">
+
+      <div class="SectionCard">
+
+        <h2>Example Output</h2>
+
+        <div class="Terminal">
+          <pre>
+npx @keshavsoft-org/express-todo simple
+
+[keshavsoft] Project created:
+my-express-app
+</pre>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <div class="SectionCard">
+
+        <h2>Generated Structure</h2>
+
+        <div class="Terminal">
+          <pre>
+my-express-app/
+├── Config/
+├── Public/
+├── .env
+├── routes.js
+├── server.js
+└── package.json
+</pre>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="features">
+
+      <div class="SectionCard">
+
+        <h2>Features</h2>
+
+        <div class="Grid">
+
+          <div class="Card">
+            <h3>⚡ Fast Setup</h3>
+            <p>Create Express projects instantly.</p>
+          </div>
+
+          <div class="Card">
+            <h3>📦 Boilerplate</h3>
+            <p>Ready-to-run backend starter.</p>
+          </div>
+
+          <div class="Card">
+            <h3>🧩 Clean Structure</h3>
+            <p>Organized folder architecture.</p>
+          </div>
+
+          <div class="Card">
+            <h3>🚀 Beginner Friendly</h3>
+            <p>Simple CLI usage.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      Built by KeshavSoft
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
