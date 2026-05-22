@@ -49,3 +49,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - export started
+
+## [1.6.4] - 2026-05-22
+
+### Added
+- simpleWithCrud process send to inProcessPath

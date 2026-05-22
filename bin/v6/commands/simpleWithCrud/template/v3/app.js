@@ -15,5 +15,5 @@ setupRoutes(app);
 const { port } = startServer(app);
 
 if (process.env.OPEN_BROWSER === "true") {
-    exec(`start http://localhost:${port}`);
+    exec(`start http://localhost:${port}/v1/`);
 };
