@@ -10,8 +10,12 @@ const load = async () => {
 
 const startFunc = async () => {
     const { default: run } = await load();
+  
+    const folderName = process.argv[2];
 
-    run({});
+    run({
+        folderName
+    });
 };
 
 startFunc().then();
