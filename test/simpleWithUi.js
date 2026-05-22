@@ -2,14 +2,16 @@ import getLatestVersion from "../bin/core/getLatestVersion.js";
 
 const commandToSend = "simpleWithUi";
 
-const load = async (cmd) => {
+const load = async () => {
     const v = getLatestVersion();
 
-    return (await import(`../bin/${v}/commands/${commandToSend}.js`)).default;
+    return import(`../bin/${v}/commands/${commandToSend}.js`);
 };
 
 const startFunc = async () => {
-    await load({});
+    const { default: run } = await load();
+
+    run({});
 };
 
 startFunc().then();
