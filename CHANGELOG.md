@@ -39,3 +39,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - test added
+
+## [1.6.1] - 2026-05-22
+
+### Added
+- simpleWithUi
