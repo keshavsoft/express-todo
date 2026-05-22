@@ -1,34 +1,55 @@
 {
   "name": "@keshavsoft-org/express-todo",
-  "version": "1.5.4",
-  "description": "CLI to scaffold projects using templates",
+
+  "version": "1.5.5",
+
+  "description": "CLI to scaffold Express.js projects using templates",
+
   "keywords": [
+    "express",
+    "expressjs",
     "cli",
     "scaffold",
-    "templates",
+    "template",
+    "boilerplate",
+    "starter",
+    "project-generator",
     "node",
-    "project-generator"
+    "nodejs",
+    "fullstack",
+    "crud",
+    "express-generator",
+    "keshavsoft"
   ],
-  "dependencies": {
-  },
+
   "type": "module",
+
   "exports": {
     ".": "./index.js"
   },
+
   "bin": {
     "@keshavsoft-org/express-todo": "./bin/cli.js"
   },
+
+  "engines": {
+    "node": ">=18"
+  },
+
   "files": [
     "bin/",
     "index.js",
     "README.md",
     "LICENSE"
   ],
-  "homepage": "https://cli.keshavsoft.com",
+
+  "homepage": "https://keshavsoft.github.io/express-todo/",
+
   "repository": {
     "type": "git",
     "url": "https://github.com/keshavsoft/express-todo"
   },
+
   "bugs": {
     "url": "https://github.com/keshavsoft/express-todo/issues"
   }
