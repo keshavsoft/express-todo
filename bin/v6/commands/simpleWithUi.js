@@ -8,7 +8,16 @@ import { createProject } from "./simpleWithUi/steps/createProject.js";
 import { announce } from "./simpleWithUi/steps/announce.js";
 
 import resolveFolderName from "../core/resolveFolderName.js";
+/**
+ * @typedef {Object} SimpleWithUiOptions
+ * @property {string} folderName
+ * @property {boolean} isAnnounce
+ * @property {boolean} showLog
+ */
 
+/**
+ * @param {SimpleWithUiOptions} options
+ */
 export default ({
     folderName = "",
     isAnnounce = false,

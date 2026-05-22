@@ -44,3 +44,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - simpleWithUi
+
+## [1.6.3] - 2026-05-22
+
+### Added
+- export started
