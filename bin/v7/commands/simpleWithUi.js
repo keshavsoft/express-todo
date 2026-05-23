@@ -9,19 +9,20 @@ import { announce } from "./simpleWithUi/steps/announce.js";
 
 import resolveFolderName from "../core/resolveFolderName.js";
 /**
- * @typedef {Object} SimpleWithUiOptions
+ * @typedef {Object} simpleWithUiOptions
  * @property {string} folderName
  * @property {boolean} isAnnounce
  * @property {boolean} showLog
  */
 
 /**
- * @param {SimpleWithUiOptions} options
+ * @param {simpleWithUiOptions} options
  */
 export default ({
     folderName = "",
     isAnnounce = false,
-    showLog = false
+    showLog = false,
+    inProcessPath
 }) => {
 
     if (showLog) {
@@ -51,7 +52,8 @@ export default ({
 
     const destination = locateDestination({
         inResolvedFolderName: resolvedFolderName,
-        showLog
+        showLog,
+        inProcessPath
     });
 
     if (showLog) {

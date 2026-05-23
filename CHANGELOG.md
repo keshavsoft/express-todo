@@ -59,3 +59,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - simple and 3 start
+
+## [1.7.5] - 2026-05-22
+
+### Added
+- simple and 3 need to test last from ext
