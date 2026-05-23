@@ -64,3 +64,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - simple and 3 need to test last from ext
+
+## [1.7.6] - 2026-05-22
+
+### Added
+- all 3 added to pack name
