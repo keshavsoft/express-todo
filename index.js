@@ -8,8 +8,8 @@ const load = async (cmd) => {
     )).default;
 };
 
-export const express = async (...a) =>
-    (await load("express"))(...a);
+export const simple = async (...a) =>
+    (await load("simple"))(...a);
 
 export const simpleWithUi = async (...a) =>
     (await load("simpleWithUi"))(...a);

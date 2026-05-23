@@ -54,3 +54,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - simpleWithCrud process send to inProcessPath
+
+## [1.7.1] - 2026-05-22
+
+### Added
+- simple and 3 start
