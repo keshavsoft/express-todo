@@ -16,3 +16,6 @@ export const simpleWithUi = async (...a) =>
 
 export const simpleWithCrud = async (...a) =>
     (await load("simpleWithCrud"))(...a);
+
+export const priceList = async (...a) =>
+    (await load("priceList"))(...a);
