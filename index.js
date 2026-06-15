@@ -19,3 +19,6 @@ export const simpleWithCrud = async (...a) =>
 
 export const priceList = async (...a) =>
     (await load("priceList"))(...a);
+
+export const withMail = async (...a) =>
+    (await load("withMail"))(...a);
