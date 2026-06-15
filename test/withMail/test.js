@@ -1,11 +1,11 @@
-import getLatestVersion from "../bin/core/getLatestVersion.js";
+import getLatestVersion from "../../bin/core/getLatestVersion.js";
 
 const commandToSend = "withMail";
 
 const load = async () => {
     const v = getLatestVersion();
 
-    return import(`../bin/${v}/commands/${commandToSend}.js`);
+    return import(`../../bin/${v}/commands/${commandToSend}.js`);
 };
 
 const startFunc = async () => {
