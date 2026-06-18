@@ -22,3 +22,6 @@ export const priceList = async (...a) =>
 
 export const withMail = async (...a) =>
     (await load("withMail"))(...a);
+
+export const tallyServer = async (...a) =>
+    (await load("tallyServer"))(...a);

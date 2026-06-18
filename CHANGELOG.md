@@ -69,3 +69,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - all 3 added to pack name
+
+## [1.12.1] - 2026-06-18
+
+### Added
+- tally server hooked
