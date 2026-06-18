@@ -101,23 +101,29 @@
         {
           "columnName": "StockItemName",
           "title": "StockItemName",
+          "field": "StockItemName",
           "cellConfig": {
             "width": "150px"
-          }
+          },
+          "isConsider": true
         },
         {
           "columnName": "StockGstApplicable",
           "title": "StockGstApplicable",
+          "field": "StockGstApplicable",
           "cellConfig": {
             "width": "150px"
-          }
+          },
+          "isConsider": true
         },
         {
           "columnName": "StockBaseUnits",
           "title": "StockBaseUnits",
+          "field": "StockBaseUnits",
           "cellConfig": {
             "width": "150px"
-          }
+          },
+          "isConsider": true
         },
         {
           "columnName": "sgstRate",
