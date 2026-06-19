@@ -1,6 +1,6 @@
 {
-  "name": "simple",
-  "version": "1.8.2",
+  "name": "tallyServer",
+  "version": "1.12.2",
   "description": "",
   "main": "app.js",
   "type": "module",
