@@ -1,52 +1,103 @@
 # 🚀 @keshavsoft-org/express-todo
 
-Simple and clean Express.js project generator.
+Simple and powerful Express.js project generator.
 
-Create a ready-to-run Express application in seconds using a single command.
+Generate ready-to-run Express.js applications with a single command.
 
 ---
 
 # ✨ Features
 
-- Fast Express boilerplate generation
-- Clean folder structure
-- Beginner friendly
-- Minimal setup
-- Ready-to-run server configuration
-- Environment file support
-- VSCode-ready project structure
+* Express.js boilerplate generation
+* CRUD project generation
+* UI project generation
+* Tally server template
+* Mail server template
+* Price List project template
+* Environment configuration support
+* VS Code friendly structure
+* Clean architecture
+* Beginner friendly
 
 ---
 
-# 📦 Installation
+# 📦 Requirements
 
-## Using NPX (Recommended)
+Before using this package, make sure you have:
+
+* Node.js >= 18
+* npm >= 9
+
+Check versions:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+# ⚡ Step 1 — Create a Project
+
+Choose one of the available templates.
+
+## Simple Project
 
 ```bash
 npx @keshavsoft-org/express-todo simple
 ```
 
----
-
-# ⚡ Quick Start
-
-## 1. Create Project
+## CRUD Project
 
 ```bash
-npx @keshavsoft-org/express-todo simple
+npx @keshavsoft-org/express-todo simpleWithCrud
+```
+
+## UI Project
+
+```bash
+npx @keshavsoft-org/express-todo simpleWithUi
+```
+
+## Tally Server
+
+```bash
+npx @keshavsoft-org/express-todo tallyServer
+```
+
+## Mail Server
+
+```bash
+npx @keshavsoft-org/express-todo withMail
+```
+
+## Price List Project
+
+```bash
+npx @keshavsoft-org/express-todo priceList
 ```
 
 ---
 
-## 2. Move Into Project
+# ⚡ Step 2 — Open Generated Project
+
+Move into the generated folder:
 
 ```bash
-cd your-project-name
+cd project-name
+```
+
+Example:
+
+```bash
+cd keshavsoft-basic-1781850868536
 ```
 
 ---
 
-## 3. Install Dependencies
+# ⚡ Step 3 — Install Dependencies
+
+Install all required packages:
 
 ```bash
 npm install
@@ -54,22 +105,55 @@ npm install
 
 ---
 
-## 4. Start Server
+# ⚡ Step 4 — Verify Environment Files
+
+Check:
+
+```txt
+.env
+.env.local
+```
+
+Update values if required.
+
+---
+
+# ⚡ Step 5 — Start the Server
+
+Run:
 
 ```bash
 npm start
 ```
 
+or
+
+```bash
+node server.js
+```
+
 ---
 
-# 📁 Generated Structure
+# ⚡ Step 6 — Open Application
+
+After starting the server, open:
 
 ```txt
-your-project/
+http://localhost:3000
+```
+
+or the URL displayed in the terminal.
+
+---
+
+# 📁 Generated Project Structure
+
+```txt
+ProjectName
 │
-├── .vscode/
-├── Config/
-├── Public/
+├── .vscode
+├── Config
+├── Public
 │
 ├── .env
 ├── .env.local
@@ -81,56 +165,52 @@ your-project/
 ├── routes.js
 ├── server.js
 │
-└── package.json
+├── package.json
+└── package-lock.json
 ```
 
 ---
 
-# 🛠 Command Reference
+# 🛠 Available Commands
 
-## Create Simple Express App
-
-```bash
-npx @keshavsoft-org/express-todo simple
-```
-
-Creates a new Express starter project with basic configuration.
+| Command        | Description                   |
+| -------------- | ----------------------------- |
+| simple         | Basic Express starter project |
+| simpleWithCrud | CRUD-enabled project          |
+| simpleWithUi   | UI-enabled project            |
+| tallyServer    | Tally integration project     |
+| withMail       | Mail-enabled server           |
+| priceList      | Price List application        |
 
 ---
 
-# 📸 Example
-
-## Command
-
-```bash
-npx @keshavsoft-org/express-todo simple
-```
-
-## Output
+# 🎯 Development Workflow
 
 ```txt
-[keshavsoft] Project created: my-express-app
+Run NPX Command
+        ↓
+Generate Project
+        ↓
+Open Project Folder
+        ↓
+npm install
+        ↓
+npm start
+        ↓
+Open Browser
+        ↓
+Start Development
 ```
 
 ---
 
-# 🎯 Why Use This?
+# 💡 Why Use This Package?
 
-Setting up Express projects repeatedly can be boring.
-
-This CLI helps you:
-
-- Skip repetitive setup
-- Start faster
-- Maintain clean structure
-- Focus on development instead of boilerplate
-
----
-
-# 🔧 Requirements
-
-- Node.js >= 18
-- npm >= 9
+* Avoid repetitive setup
+* Start projects quickly
+* Maintain clean architecture
+* Standardized folder structure
+* Faster development workflow
 
 ---
 
