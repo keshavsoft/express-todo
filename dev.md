@@ -1,58 +1,218 @@
-# Developer Notes – @keshavsoft/kschema-cli
+# 🚀 @keshavsoft-org/express-todo
+
+Create Express.js starter projects instantly using a single NPX command.
+
+Generate ready-to-run Node.js and Express.js boilerplate projects for different use cases including CRUD applications, UI projects, mail-enabled servers, and Tally integrations.
 
 ---
 
-## 🎯 Purpose
+# ✨ Features
 
-This package is **NOT just a CLI**.
+✅ One-command project generation
 
-It serves two roles:
-1. CLI tool (via `bin/cli.js`)
-2. Internal SDK used by VS Code extension (EndPointGen)
+✅ Express.js boilerplates
 
----
+✅ CRUD-ready projects
 
-## 🧩 Architecture
+✅ UI-enabled projects
 
-VS Code Extension (EndPointGen)
-→ triggers commands  
-→ calls orchestration  
-→ imports from `@keshavsoft/kschema-cli`  
-→ uses exported functions (like `express`)  
-→ internally maps to `bin/v12/...` implementation  
+✅ Mail-enabled server template
 
----
+✅ Tally integration template
 
-## 🔗 Important Flow
+✅ Clean folder structure
 
-```js
-import { express } from "@keshavsoft/kschema-cli";
+✅ Environment configuration support
 
-## 🔗 Related Projects
+✅ Beginner friendly
 
-### Core Schema Library
-https://www.npmjs.com/package/@keshavsoft/kschema
-
-Minimal config store used internally by CLI.
+✅ Production-ready foundation
 
 ---
 
-### CLI Tool
-https://www.npmjs.com/package/@keshavsoft/kschema-cli
+# 📦 Installation
 
-Scaffolding engine used to generate project structures.
+No installation required.
 
----
+Run directly using:
 
-### VS Code Extension (Real Usage)
-https://github.com/keshavsoft/EndPointGen
-
-This extension uses `@keshavsoft/kschema-cli` internally  
-to generate and manage project structures.
+```bash
+npx @keshavsoft-org/express-todo <command>
+```
 
 ---
 
-## 🧠 Note
+# ⚡ Available Commands
 
-This CLI is actively used in production via the VS Code extension above.  
-It is not just a standalone tool, but part of a working ecosystem.
+| Command        | Description                             |
+| -------------- | --------------------------------------- |
+| simple         | Basic Express.js starter project        |
+| simpleWithCrud | Express project with CRUD functionality |
+| simpleWithUi   | Express project with UI structure       |
+| tallyServer    | Express server with Tally integration   |
+| withMail       | Express server with Mail support        |
+| priceList      | Generate price list project             |
+
+---
+
+# 🚀 Quick Start
+
+## Create Simple Express Project
+
+```bash
+npx @keshavsoft-org/express-todo simple
+```
+
+---
+
+## Create CRUD Project
+
+```bash
+npx @keshavsoft-org/express-todo simpleWithCrud
+```
+
+---
+
+## Create UI Project
+
+```bash
+npx @keshavsoft-org/express-todo simpleWithUi
+```
+
+---
+
+## Create Tally Server
+
+```bash
+npx @keshavsoft-org/express-todo tallyServer
+```
+
+---
+
+## Create Mail Server
+
+```bash
+npx @keshavsoft-org/express-todo withMail
+```
+
+---
+
+## Create Price List Project
+
+```bash
+npx @keshavsoft-org/express-todo priceList
+```
+
+---
+
+# 📁 Example Generated Structure
+
+```txt
+ProjectName
+│
+├── Config
+├── Public
+│
+├── .env
+├── .env.local
+│
+├── app.js
+├── config.json
+├── configLoader.js
+├── port.js
+├── routes.js
+├── server.js
+│
+├── package.json
+└── package-lock.json
+```
+
+---
+
+# 🛠 After Project Creation
+
+Move into generated project:
+
+```bash
+cd ProjectName
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start server:
+
+```bash
+npm start
+```
+
+---
+
+# 📖 Usage Examples
+
+```bash
+npx @keshavsoft-org/express-todo simple
+
+npx @keshavsoft-org/express-todo simpleWithCrud
+
+npx @keshavsoft-org/express-todo simpleWithUi
+
+npx @keshavsoft-org/express-todo tallyServer
+
+npx @keshavsoft-org/express-todo withMail
+
+npx @keshavsoft-org/express-todo priceList
+```
+
+---
+
+# 🎯 Why Use This Package?
+
+Instead of creating:
+
+* app.js
+* server.js
+* routes.js
+* Config folder
+* Public folder
+* Environment files
+
+manually every time,
+
+generate everything instantly and start development immediately.
+
+---
+
+# 🔧 Requirements
+
+* Node.js 18+
+* npm 9+
+
+---
+
+# 👨‍💻 Maintained By
+
+KeshavSoft
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+# ⭐ Support
+
+If this project helps you:
+
+⭐ Star the repository
+
+🍴 Fork the project
+
+🚀 Share with developers
+
+📦 Use it in your next Express.js project
