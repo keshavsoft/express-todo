@@ -227,5 +227,74 @@
   "PrimarykeyTableNames": [
     "BillsTable"
   ],
-  "PrimarykeyTables": []
+  "PrimarykeyTables": [],
+  "columnsConfig": [
+    {
+      "columnName": "StockItemName",
+      "title": "StockItemName",
+      "field": "StockItemName",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isConsider": true
+    },
+    {
+      "columnName": "Rate",
+      "title": "Rate",
+      "field": "Rate",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isConsider": true
+    },
+    {
+      "columnName": "RateInc",
+      "title": "RateInc",
+      "field": "RateInc",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isConsider": true
+    },
+    {
+      "columnName": "Qty",
+      "title": "Qty",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "Amount",
+      "title": "Amount",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "TaxPer",
+      "title": "TaxPer",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "Uom",
+      "title": "Uom",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "ParentPk",
+      "title": "ParentPk",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "field": "pk",
+      "title": "pk",
+      "primary": true
+    }
+  ]
 }
