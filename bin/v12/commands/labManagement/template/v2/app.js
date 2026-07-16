@@ -1,12 +1,11 @@
 import { exec } from "child_process";
+import dotenv from 'dotenv'
+dotenv.config({ path: '.env' })
 
 import express from "express";
 
-import loadConfig from "./configLoader.js";
 import setupRoutes from "./routes.js";
 import startServer from "./server.js";
-
-loadConfig();
 
 const app = express()
 
@@ -15,5 +14,5 @@ setupRoutes(app);
 const { port } = startServer(app);
 
 if (process.env.OPEN_BROWSER === "true") {
-    exec(`start http://localhost:${port}`);
+    exec(`start http://localhost:${port}/v3/doctors/index.html`);
 };

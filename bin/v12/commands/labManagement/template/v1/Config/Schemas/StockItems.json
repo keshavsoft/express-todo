@@ -82,10 +82,73 @@
       },
       "PrimarykeyTableNames": [],
       "PrimarykeyTables": [],
+      "columnsConfig1": [
+        {
+          "columnName": "StockItemName",
+          "title": "StockItemName",
+          "cellConfig": {
+            "width": "150px"
+          }
+        }
+      ],
+      "callbacks": {
+        "table": {
+          "onDelete": "function",
+          "onReadFail": "function"
+        }
+      },
       "columnsConfig": [
         {
           "columnName": "StockItemName",
           "title": "StockItemName",
+          "field": "StockItemName",
+          "cellConfig": {
+            "width": "150px"
+          },
+          "isConsider": true
+        },
+        {
+          "columnName": "StockGstApplicable",
+          "title": "StockGstApplicable",
+          "field": "StockGstApplicable",
+          "cellConfig": {
+            "width": "150px"
+          },
+          "isConsider": true
+        },
+        {
+          "columnName": "StockBaseUnits",
+          "title": "StockBaseUnits",
+          "field": "StockBaseUnits",
+          "cellConfig": {
+            "width": "150px"
+          },
+          "isConsider": true
+        },
+        {
+          "columnName": "sgstRate",
+          "title": "sgstRate",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "cgstRate",
+          "title": "cgstRate",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "TaxPer",
+          "title": "TaxPer",
+          "cellConfig": {
+            "width": "150px"
+          }
+        },
+        {
+          "columnName": "Uom",
+          "title": "Uom",
           "cellConfig": {
             "width": "150px"
           }
@@ -119,46 +182,9 @@
           }
         },
         {
-          "columnName": "StockGstApplicable",
-          "title": "StockGstApplicable",
-          "cellConfig": {
-            "width": "150px"
-          }
-        },
-        {
-          "columnName": "StockGstTypeOfSupply",
-          "title": "StockGstTypeOfSupply",
-          "cellConfig": {
-            "width": "150px"
-          }
-        },
-        {
-          "columnName": "sgstRate",
-          "title": "sgstRate",
-          "cellConfig": {
-            "width": "150px"
-          }
-        },
-        {
-          "columnName": "cgstRate",
-          "title": "cgstRate",
-          "cellConfig": {
-            "width": "150px"
-          }
-        },
-        {
-          "columnName": "TaxPer",
-          "title": "TaxPer",
-          "cellConfig": {
-            "width": "150px"
-          }
-        },
-        {
-          "columnName": "Uom",
-          "title": "Uom",
-          "cellConfig": {
-            "width": "150px"
-          }
+          "field": "pk",
+          "title": "pk",
+          "primary": true
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
-  "name": "simple",
-  "version": "1.8.2",
+  "name": "labManagement",
+  "version": "1.1.1",
   "description": "",
   "main": "app.js",
   "type": "module",

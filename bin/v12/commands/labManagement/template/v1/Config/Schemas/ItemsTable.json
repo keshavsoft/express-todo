@@ -33,6 +33,22 @@
       "showInUi": true
     },
     {
+      "field": "RateInc",
+      "title": "Rate Inc",
+      "unique": false,
+      "type": "number",
+      "isNumber": true,
+      "ShowTotal": false,
+      "footerFormatter": "",
+      "showRupee": true,
+      "align": "right",
+      "WidthOptions": {
+        "inPx": 250
+      },
+      "isConsider": true,
+      "showInUi": true
+    },
+    {
       "field": "Qty",
       "title": "Qty",
       "unique": false,
@@ -48,8 +64,14 @@
       "showInUi": true
     },
     {
+      "columnName": "Amount",
+      "title": "Amount",
+      "isRequired": false
+    },
+    {
       "field": "Amount",
       "title": "Amount",
+      "columnName": "Amount",
       "unique": false,
       "type": "number",
       "isNumber": true,
@@ -61,6 +83,15 @@
       "WidthOptions": {
         "inPx": 250
       },
+      "cellConfig": {
+        "width": "100px",
+        "rightAlign": true,
+        "tableFooter": {
+          "showTotal": true
+        }
+      },
+      "onKeyDown": true,
+      "onKeyDownType": "Amount",
       "isConsider": true,
       "showInUi": false
     },
@@ -196,5 +227,74 @@
   "PrimarykeyTableNames": [
     "BillsTable"
   ],
-  "PrimarykeyTables": []
+  "PrimarykeyTables": [],
+  "columnsConfig": [
+    {
+      "columnName": "StockItemName",
+      "title": "StockItemName",
+      "field": "StockItemName",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isConsider": true
+    },
+    {
+      "columnName": "Rate",
+      "title": "Rate",
+      "field": "Rate",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isConsider": true
+    },
+    {
+      "columnName": "RateInc",
+      "title": "RateInc",
+      "field": "RateInc",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isConsider": true
+    },
+    {
+      "columnName": "Qty",
+      "title": "Qty",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "Amount",
+      "title": "Amount",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "TaxPer",
+      "title": "TaxPer",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "Uom",
+      "title": "Uom",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "columnName": "ParentPk",
+      "title": "ParentPk",
+      "cellConfig": {
+        "width": "150px"
+      }
+    },
+    {
+      "field": "pk",
+      "title": "pk",
+      "primary": true
+    }
+  ]
 }
