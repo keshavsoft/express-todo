@@ -4,11 +4,11 @@ const startFunc = () => {
 
     const folderName = process.argv[2];
 
-    const { default: run } = labManagement({
-        folderName
-    });
+    // const { default: run } = labManagement({
+    //     folderName
+    // });
 
-    run({
+    labManagement({
         folderName
     });
 };
