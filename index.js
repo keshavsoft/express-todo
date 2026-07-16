@@ -1,4 +1,7 @@
 import getLatestVersion from "./bin/core/getLatestVersion.js";
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
 
 const load = async (cmd) => {
     const v = getLatestVersion();
@@ -25,3 +28,14 @@ export const withMail = async (...a) =>
 
 export const tallyServer = async (...a) =>
     (await load("tallyServer"))(...a);
+
+// export const labManagement = async (...a) =>
+//     (await load("labMan"))(...a);
+
+export const labManagement = (options) => {
+    const v = getLatestVersion();
+
+    const mod = require(`./bin/${v}/commands/labManagement.js`);
+
+    return mod.default(options);
+};
