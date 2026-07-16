@@ -74,3 +74,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - tally server hooked
+
+## [1.12.8] - 2026-07-16
+
+### Added
+- labManagement with out async
