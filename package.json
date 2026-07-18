@@ -1,6 +1,6 @@
 {
   "name": "@keshavsoft-org/express-todo",
-  "version": "1.12.12",
+  "version": "1.12.13",
   "description": "CLI to scaffold Express.js projects using templates",
   "keywords": [
     "express",
